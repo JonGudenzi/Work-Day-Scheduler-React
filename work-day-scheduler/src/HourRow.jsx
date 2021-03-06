@@ -4,11 +4,8 @@ import React from "react";
 function HourRow(props) {
 
   const saveBtn = () => {
-    var userText = document.getElementById(`${props.currentHour}-hour-task`).value;
-    var hourTask = document.getElementById(props.currentHour);
-
-    localStorage.setItem(hourTask, userText);
-
+    console.log(props.hourTask.filter(hourTime => hourTime.hour === props.currentHour));
+    // props.setHourTask(hourTask.filter(hourTime => hourTime.hour === currentHour))
   }
   return (
     <div className="row" id={props.currentHour}>
