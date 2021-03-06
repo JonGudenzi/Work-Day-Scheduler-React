@@ -1,9 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './styles/App.css';
 import HourRow from './HourRow';
-import Header from './Header';
 
-class App extends React.Component{
+class App extends React.Component {
   state = {
     hourTask: {
       8: "",
@@ -19,17 +18,18 @@ class App extends React.Component{
     }
   };
 
-  render(){
+  render() {
     const hours = [8, 9, 10, 11, 12, 1, 2, 3, 4, 5]
-  return (
-    <div className="App">
-      {hours.map((hour)=>{
-        return <HourRow currentHour={hour} 
-        stateHour={state.hourTask[hour]}/>
-      })}
-    </div>
-  );
-}
+    return (
+      <div className="App">
+        {hours.map((hour) => {
+          return <HourRow currentHour={hour}
+            stateHour={this.state.hourTask[hour]} />
+        })}
+      </div>
+    );
+    
+  }
 }
 
 export default App;
