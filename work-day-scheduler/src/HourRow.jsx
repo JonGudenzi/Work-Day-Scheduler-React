@@ -9,7 +9,6 @@ function HourRow(props) {
    
   localStorage.setItem(hourTask, userText);
   
-  console.log("+++ Get Item from Local Storage: ", localStorage.getItem(hourTask))
   }
     return (
       <div className="row" id={props.currentHour}>
