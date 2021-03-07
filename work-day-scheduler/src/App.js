@@ -4,7 +4,6 @@ import HourRow from './HourRow';
 
 function App() {
 
-
   const [hourTask, setHourTask] = useState(JSON.parse(localStorage.getItem("time"))||[
     {hour:8, text: "" },
     {hour:9, text: "" },
@@ -36,8 +35,6 @@ function App() {
         )}
     </div>
   );
-
-
 }
 
 export default App;
