@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/Work-Day-Scheduler-React/static/css/main.ce7ed0fa.chunk.css",
-    "main.js": "/Work-Day-Scheduler-React/static/js/main.4847949f.chunk.js",
-    "main.js.map": "/Work-Day-Scheduler-React/static/js/main.4847949f.chunk.js.map",
-    "runtime-main.js": "/Work-Day-Scheduler-React/static/js/runtime-main.05b2b1fb.js",
-    "runtime-main.js.map": "/Work-Day-Scheduler-React/static/js/runtime-main.05b2b1fb.js.map",
+    "main.js": "/Work-Day-Scheduler-React/static/js/main.00951be1.chunk.js",
+    "main.js.map": "/Work-Day-Scheduler-React/static/js/main.00951be1.chunk.js.map",
+    "runtime-main.js": "/Work-Day-Scheduler-React/static/js/runtime-main.dc237976.js",
+    "runtime-main.js.map": "/Work-Day-Scheduler-React/static/js/runtime-main.dc237976.js.map",
     "static/css/2.fabbef47.chunk.css": "/Work-Day-Scheduler-React/static/css/2.fabbef47.chunk.css",
-    "static/js/2.70d5feec.chunk.js": "/Work-Day-Scheduler-React/static/js/2.70d5feec.chunk.js",
-    "static/js/2.70d5feec.chunk.js.map": "/Work-Day-Scheduler-React/static/js/2.70d5feec.chunk.js.map",
-    "static/js/3.3a807d57.chunk.js": "/Work-Day-Scheduler-React/static/js/3.3a807d57.chunk.js",
-    "static/js/3.3a807d57.chunk.js.map": "/Work-Day-Scheduler-React/static/js/3.3a807d57.chunk.js.map",
+    "static/js/2.7a6f6adf.chunk.js": "/Work-Day-Scheduler-React/static/js/2.7a6f6adf.chunk.js",
+    "static/js/2.7a6f6adf.chunk.js.map": "/Work-Day-Scheduler-React/static/js/2.7a6f6adf.chunk.js.map",
+    "static/js/3.3b576eeb.chunk.js": "/Work-Day-Scheduler-React/static/js/3.3b576eeb.chunk.js",
+    "static/js/3.3b576eeb.chunk.js.map": "/Work-Day-Scheduler-React/static/js/3.3b576eeb.chunk.js.map",
     "index.html": "/Work-Day-Scheduler-React/index.html",
     "static/css/2.fabbef47.chunk.css.map": "/Work-Day-Scheduler-React/static/css/2.fabbef47.chunk.css.map",
     "static/css/main.ce7ed0fa.chunk.css.map": "/Work-Day-Scheduler-React/static/css/main.ce7ed0fa.chunk.css.map",
-    "static/js/2.70d5feec.chunk.js.LICENSE.txt": "/Work-Day-Scheduler-React/static/js/2.70d5feec.chunk.js.LICENSE.txt"
+    "static/js/2.7a6f6adf.chunk.js.LICENSE.txt": "/Work-Day-Scheduler-React/static/js/2.7a6f6adf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.05b2b1fb.js",
+    "static/js/runtime-main.dc237976.js",
     "static/css/2.fabbef47.chunk.css",
-    "static/js/2.70d5feec.chunk.js",
+    "static/js/2.7a6f6adf.chunk.js",
     "static/css/main.ce7ed0fa.chunk.css",
-    "static/js/main.4847949f.chunk.js"
+    "static/js/main.00951be1.chunk.js"
   ]
 }
