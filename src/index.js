@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import Header from './Header';
-import './styles/Header.css';
+import App from './App/App';
+import Header from './Header/Header';
+import './Header/Header.css';
+import './HourRow/HourRow.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

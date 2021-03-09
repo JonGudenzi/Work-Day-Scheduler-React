@@ -1,5 +1,6 @@
 import React from "react";
-import { useState } from 'react'
+import { useState } from 'react';
+// import background from "/public/img/beach.jpg";
 
 function HourRow(props) {
   console.log(props.text)

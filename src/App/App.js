@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import './styles/App.css';
-import HourRow from './HourRow';
+import '../App/App.css';
+import HourRow from '../HourRow/HourRow';
 
 function App() {
-
   const [hourTask, setHourTask] = useState(JSON.parse(localStorage.getItem("time"))||[
     {hour:8, text: "" },
     {hour:9, text: "" },
@@ -15,7 +14,7 @@ function App() {
     {hour:15, text: "" },
     {hour:16, text: "" },
     {hour:17, text: "" }
-  ])
+  ]);
   console.log(hourTask);
   return (
     <div className="App">
