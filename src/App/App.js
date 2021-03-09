@@ -15,12 +15,12 @@ function App() {
     {hour:16, text: "" },
     {hour:17, text: "" }
   ]);
+
   console.log(hourTask);
   return (
     <div className="App">
       {
         hourTask.map(({hour, text}) => {
-    
           return (
             <HourRow
               currentHour={hour}
@@ -30,7 +30,6 @@ function App() {
               setHourTask={setHourTask} />
           )
         }
-
         )}
     </div>
   );
