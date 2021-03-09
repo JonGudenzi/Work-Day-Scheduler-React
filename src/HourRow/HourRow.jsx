@@ -7,17 +7,20 @@ function HourRow(props) {
   const [textVal, setTextVal] = useState(props.text)
 
   const saveBtn = () => {
-    let newVal = props.hourTask.filter(hourTime => hourTime.hour === props.currentHour);
-
-    newVal[0].text = textVal;
-
-    const oldVals = props.hourTask.filter(hourTime => hourTime.hour !== props.currentHour);
-
-    const newArr = [...oldVals, ...newVal].sort((a, b) => a.hour - b.hour)
-    props.setHourTask(newArr)
-    localStorage.setItem("time", JSON.stringify(newArr));
-
+let newHourTask = props.hourTask.map(hourTaskObject => {
+  if (hourTaskObject.hour === props.currentHour){
+    return {...hourTaskObject, text: textVal}
+  }else{
+    return hourTaskObject
   }
+})   
+console.log(newHourTask);
+
+    props.setHourTask(newHourTask)
+    localStorage.setItem("time", JSON.stringify(newHourTask));
+  }
+
+  
 
   return (
     <div className="row" id={props.currentHour}>
