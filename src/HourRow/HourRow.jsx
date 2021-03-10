@@ -2,9 +2,21 @@ import moment from "moment";
 import React from "react";
 import { useState } from 'react';
 
+const classes = {
+  past: {
+    backgroundColor: "tomato"
+  },
+  present: {
+    backgroundColor: "aqua"
+  },
+  future: {
+    backgroundColor: "teal"
+  }
+}
+
 function HourRow(props) {
-  console.log(props.text)
   const [textVal, setTextVal] = useState(props.text)
+  const timeNow = Number(moment().format("h"));
 
   const saveBtn = () => {
     let newHourTask = props.hourTask.map(hourTaskObject => {
@@ -20,25 +32,19 @@ function HourRow(props) {
     localStorage.setItem("time", JSON.stringify(newHourTask));
   }
 
-  const colorTimeBlock = (currentTime) => {
-    const currentTime = Number(moment().format("H"));
-    console.log(currentTime);
-    parseInt(props.currentHour);
-    if (props.currentHour === currentTime) {
-      return "present";
-    }
-    if (props.currentHour < currentTime) {
-      return "past";
-    } else {
-      return "future";
-    }
-  };
-
   return (
     <div className="row" id={props.currentHour}>
       <label className="col-sm-1 hour">{props.currentHour + ':00'}</label>
 
-      <textarea className={colorTimeBlock(currentTime)} value={textVal} onChange={e => setTextVal(e.target.value)} id={`${props.currentHour}-hour-task`} type="text" className="col-md-10 time-block"></textarea>
+      <textarea 
+      value={textVal} 
+      onChange={e => setTextVal(e.target.value)} 
+      id={`${props.currentHour}-hour-task`} 
+      type="text" 
+      className="col-md-10 time-block"
+      style={props.currentHour === timeNow ? classes.present : props.currentHour > timeNow ? classes.future : classes.past}
+      >
+      </textarea>
 
       <button onClick={saveBtn} type="submit" className="saveBtn col-sm-1">SAVE<i className="fas fa-save save"></i></button>
     </div>

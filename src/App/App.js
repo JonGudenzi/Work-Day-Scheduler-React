@@ -27,8 +27,7 @@ function App() {
               text={text}
               key={hour}
               hourTask={hourTask}
-              setHourTask={setHourTask}
-              color={colorTimeBlock} />
+              setHourTask={setHourTask} />
           )
         }
         )}
