@@ -7,6 +7,10 @@
   This is a work day scheduler that has been refactored using React. The app allows a user to set tasks for each hour of the day. These tasks will be saved in local storage so if the user leaves the page and returns later the tasks that were saved will still display.
 
   [🌴 CLICK HERE for the deployed app of Work-Day-Scheduler](https://jongudenzi.github.io/Work-Day-Scheduler-React/)
+  
+  <br>
+
+  <img src="public/wdsr.PNG" width="500" height="250">
 
   ## Table of Contents
 
