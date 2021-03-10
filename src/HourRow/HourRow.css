@@ -10,3 +10,15 @@ textarea{
 .row{
     margin-bottom: 10px;
 }
+
+.past{
+    background-color: tomato;
+}
+
+.present{
+    background-color: green;
+}
+
+.future{
+    background-color: orange;
+}
