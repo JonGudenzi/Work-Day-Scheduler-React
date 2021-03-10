@@ -1,3 +1,4 @@
+import moment from "moment";
 import React from "react";
 import { useState } from 'react';
 
@@ -19,12 +20,14 @@ function HourRow(props) {
     localStorage.setItem("time", JSON.stringify(newHourTask));
   }
 
-  const colorTimeBlock = (hour) => {
-    console.log(hour);
-    if (props.currentHour === hour) {
+  const colorTimeBlock = (currentTime) => {
+    const currentTime = Number(moment().format("H"));
+    console.log(currentTime);
+    parseInt(props.currentHour);
+    if (props.currentHour === currentTime) {
       return "present";
     }
-    if (props.currentHour < hour) {
+    if (props.currentHour < currentTime) {
       return "past";
     } else {
       return "future";
@@ -35,7 +38,7 @@ function HourRow(props) {
     <div className="row" id={props.currentHour}>
       <label className="col-sm-1 hour">{props.currentHour + ':00'}</label>
 
-      <textarea className={colorTimeBlock()} value={textVal} onChange={e => setTextVal(e.target.value)} id={`${props.currentHour}-hour-task`} type="text" className="col-md-10 time-block"></textarea>
+      <textarea className={colorTimeBlock(currentTime)} value={textVal} onChange={e => setTextVal(e.target.value)} id={`${props.currentHour}-hour-task`} type="text" className="col-md-10 time-block"></textarea>
 
       <button onClick={saveBtn} type="submit" className="saveBtn col-sm-1">SAVE<i className="fas fa-save save"></i></button>
     </div>
